@@ -10,5 +10,4 @@ i2c = I2C(1, sda=Pin(2), scl=Pin(3))  # Correct I2C pins for RP2040
 xxx = pct2075.PCT2075(i2c)
 
 while True:
-
     time.sleep(0.5)

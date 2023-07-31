@@ -134,8 +134,9 @@ class PCT2075:
         """
         Sensor operation_mode
         Sets the alert mode. In comparator mode, the sensor acts like a thermostat and will activate
-        the INT pin according to `high_temp_active_high` when an alert is triggered. The INT pin will be
-        deactivated when the temperature falls below :attr:`temperature_hysteresis`.
+        the INT pin according to `high_temp_active_high` when an alert is triggered.
+        The INT pin will be deactivated when the temperature falls below
+        :attr:`temperature_hysteresis`.
         In interrupt mode the INT pin is activated once when a temperature fault
         is detected, and once more when the temperature falls below
         :attr:`temperature_hysteresis`. In interrupt mode, the alert is cleared by
